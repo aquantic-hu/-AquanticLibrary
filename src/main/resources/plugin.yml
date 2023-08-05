@@ -1,0 +1,4 @@
+name: AquanticLibrary
+version: '${project.version}'
+main: hu.aquantic.aqualib.AquanticLibrary
+api-version: '1.20'
