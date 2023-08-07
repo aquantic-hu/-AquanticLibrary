@@ -1,9 +1,6 @@
 package hu.aquantic.aqualib;
 
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import static hu.aquantic.aqualib.Utils.AquaLog;
 
 public final class AquanticLibrary extends JavaPlugin {
 

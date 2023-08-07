@@ -6,7 +6,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.logging.Level;
-import java.util.logging.LogRecord;
 
 public class Utils {
     public static void AquaLog(Integer level, String message) {
@@ -18,11 +17,11 @@ public class Utils {
         }
     }
     public static void AquaText(Integer type, String message, CommandSender sender) {
-        Player p = (Player) sender;
+
+
         switch (type) {
-            case 1 -> p.sendMessage(message);
-            case 2 -> Bukkit.broadcastMessage(message);
-            case 3 -> p.sendPlainMessage(message);
+            case 0 -> {for (Player player : Bukkit.getOnlinePlayers()) {player.sendMessage(message);}}
+            case 1 -> Bukkit.broadcastMessage(message);
             default -> throw new IllegalStateException("Hibásan lett megadva az 'AquaText' függvény! -> " + type);
         }
     }
