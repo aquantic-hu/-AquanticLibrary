@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.logging.Level;
 
-public class Utils {
+public class ChatUtils {
 
     public static void AquaLog(@NotNull Integer level, String message) {
         switch (level) {
